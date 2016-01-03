@@ -24,7 +24,7 @@ public class TrackResourceAssembler extends ResourceAssemblerSupport<Track, Reso
 
         Resource<Track> resource = new Resource<>(entity)
         resource.add(linkTo(TrackController.class, entity.id).withSelfRel())
-        resource.add(new Link(entity.uri).withRel("track"))
+        resource.add(new Link(entity.uri).withRel("media"))
         if(entity.thunmbnail)[
                 resource.add(new Link(entity.thunmbnail).withRel("thumbnail"))
         ]

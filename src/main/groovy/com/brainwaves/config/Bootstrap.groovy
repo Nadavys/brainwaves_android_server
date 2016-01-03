@@ -25,23 +25,28 @@ public class Bootstrap {
     def init(){
         def categories = [
             new TrackCategory(
-                    name:"create",
-            description: "ipsum lorem create"
+            name:"create",
+            description: "ipsum lorem create",
+            thumbnail: "https://pbs.twimg.com/profile_images/633782900077408256/F541mrSs_400x400.jpg"
+
             ),
 
             new TrackCategory(
                     name:"relax",
-            description: "ipsum lorem relax"
+            description: "ipsum lorem relax",
+                    thumbnail:"https://pbs.twimg.com/profile_images/590205977321984002/wiJx_lh3.jpg"
             ),
             new TrackCategory(
                     name:"sleep",
-            description: "ipsum lorem sleep"
+            description: "ipsum lorem sleep",
+                    thumbnail: "https://static-s.aa-cdn.net/img/ios/949789164/e2d5f4697cde947639ebf834a24437b6"
             ),
 
             new TrackCategory(
                     name:"sos",
-            description: "ipsum lorem sos"
-            ),
+            description: "ipsum lorem sos",
+                    thumbnail: "http://authentic-scandinavia.com/system/images/tours/photos/155/thumbnail.jpg"
+            )
         ]
 
         trackCategoryRepository.save(categories)
